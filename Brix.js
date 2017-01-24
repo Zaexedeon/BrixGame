@@ -6,13 +6,13 @@ var context = canvas.getContext("2d");
  *-----------------------------------------------*/
 var canvasMargin = 15;
 var boardMargin = 40; /* Space from board edge to targets */
-var ballTrailMaxLen = 50;
+var ballTrailMaxLen = 100;
 
 /*-----------------------------------------------*
  * Tracking values
  *-----------------------------------------------*/
 var targetInfo = { length:50, height:10, edgeSpacing:5, rowSpacing: 10}; /* Used to generate targets only */
-var ballInfo = { pos:{x:150, y:150}, dir: {x:3, y:5}, size:10 };
+var ballInfo = { pos:{x:100, y:100}, dir: {x:3, y:5}, size:10 };
 var liveTargetList = [];
 var hitTargetList = [];
 var ballTrail = [];
